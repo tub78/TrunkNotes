@@ -1,0 +1,257 @@
+<!doctype html>
+<!-- !doctype html public "-//W3C//DTD HTML 4.0 Transitional //EN"> -->
+<html>
+<head>
+    <meta name="GENERATOR" content="mkd2html 2.0.7 DEBUG DL=BOTH">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8"> 
+
+    <meta name="title"   content="SpecialHeader"/>
+    <meta name="author"  content="Stuart Andrews"/>
+    <meta name="date"    content="Sun Mar 20 11:43:01 2011
+"/>
+    <meta name="version" content="2.0.7 DEBUG DL=BOTH"/>
+    <meta name="source"  content="SpecialHeader"/>
+    <meta name="dir"     content=""/>
+    <meta name="html"    content=""/>
+    <meta name="config"  content=" LINKS IMAGE PANTS HTML !STRICT !TAGTEXT EXT !CDATA SUPERSCRIPT RELAXED TABLES STRIKETHROUGH !TOC !MKD_1_COMPAT !AUTOLINK !SAFELINK HEADER !TABSTOP DIVQUOTE ALPHALIST DLIST !FOOTNOTE"/>
+    <!--
+    <meta name="style"   content="<?theme style?>"/>
+    <meta name="toc"  content="<?theme toc?>"/>
+    <meta name="body"    content="<?theme body?>"/>
+    <meta name="include" content="<?theme include(file)?>"/>
+    -->
+
+    <title>SpecialHeader</title>
+    
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" type="text/css" href="style-combined.css" />
+
+
+    <!-- MATHJAX hosted CDN.MATHJAX.ORG -->
+    <!-- <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> MathJax.Hub.Config({ extensions: ["tex2jax.js"], jax: ["input/TeX","output/HTML-CSS"], tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]} }); </script> -->
+
+
+    <!-- LOCAL SyntaxHighlighter -->
+    <!-- <link href="styles/shCore.css" rel="stylesheet" type="text/css" /> <link href="styles/shThemeDefault.css" rel="stylesheet" type="text/css" /> <script type="text/javascript" src="scripts/shCore.js"></script> -->
+
+
+    <!-- DROPBOX hosted SyntaxHighlighter -->
+    <link href="http://dl.dropbox.com/u/1603420/SyntaxHighlighter/styles/shCore.css" rel="stylesheet" type="text/css" /> <link href="http://dl.dropbox.com/u/1603420/SyntaxHighlighter/styles/shThemeDefault.css" rel="stylesheet" type="text/css" /> <script type="text/javascript" src="http://dl.dropbox.com/u/1603420/SyntaxHighlighter/scripts/shCore.js"></script>
+
+
+    <!-- ALEXGORBATCHEV hosted SyntaxHighlighter -->
+    <!-- <link href="http://alexgorbatchev.com/pub/sh/current/styles/shCore.css" rel="stylesheet" type="text/css" /> <link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css" rel="stylesheet" type="text/css" /> <script type="text/javascript" src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js"></script> -->
+
+
+    <!-- SHOW/HIDE JAVASCRIPT -->
+    <script language="javascript"> 
+        <!--
+        function showhide(in_classname) {
+            var x = document.getElementsByTagName('div');
+            for (i=0; i<x.length; i++) {
+                if ( x[i].className == in_classname ) {
+                    if (x[i].style.display == 'block') {
+                        state = 'none';
+                    } else {
+                        state = 'block';
+                    }
+                    x[i].style.display = state;
+                }
+            }
+        }
+        -->
+    </script> 
+
+    <!-- DAYTIME/NIGHTTIME JAVASCRIPT -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // Display day mode between 7am and 8pm
+            var currentTime = new Date().getHours();
+            if (7 <= currentTime && currentTime < 19) {
+                $(".todoaction,.ideaaction,.bugaction,.doneaction,body,h1,h2,h3,h4,h5,h6,a,a.missing-wiki-link,th,blockquote,code").addClass("day");
+            } else {
+                $(".todoaction,.ideaaction,.bugaction,.doneaction,body,h1,h2,h3,h4,h5,h6,a,a.missing-wiki-link,th,blockquote,code").addClass("night");
+            }
+
+            $("button#daynight").click(function(){
+                $(".todoaction,.ideaaction,.bugaction,.doneaction,body,h1,h2,h3,h4,h5,h6,a,a.missing-wiki-link,th,blockquote,code").toggleClass("day");
+                $(".todoaction,.ideaaction,.bugaction .doneaction,body,h1,h2,h3,h4,h5,h6,a,a.missing-wiki-link,th,blockquote,code").toggleClass("night");
+            });
+
+            $("button#hdrcontents").click(function(){
+                $("div.hdrcontents").toggle();
+            });
+
+            $("button#hdrtags").click(function(){
+                $("div.hdrtags").toggle();
+            });
+            
+            $("button#hdrbacklinks").click(function(){
+                $("div.hdrbacklinks").toggle();
+            });
+
+        });
+    </script>
+
+</head>
+<body>
+    
+<button id="hdrcontents">Contents</button><button id="daynight">Day/Night</button>   
+<span class="tiny">
+By: [<a href="file:///Users/stu/Desktop/Dropbox/Documents/TrunkNotes/Html/SpecialHeader.html">SpecialHeader</a>] [<a href="file:///Users/stu/Desktop/Dropbox/Documents/TrunkNotes/Html/Snippet_csscombined.html">Snippet_csscombined</a>] [<a href="file:///Users/stu/Desktop/Dropbox/Documents/TrunkNotes/Html/Snippet_cssincl.html">Snippet_cssincl</a>] [<a href="file:///Users/stu/Desktop/Dropbox/Documents/TrunkNotes/Html/Snippet_javascript.html">Snippet_javascript</a>] 
+</span>
+
+<hr>
+
+<div class="hdrcontents">
+<h1>Contents</h1>
+
+</div> 
+
+
+
+
+<pre class="doneaction"> 
+@D 2011-03-20 11:22:31 WORKS!   (JQuery Rules!)   TN, Javascript, Html, SpecialHeader: include FIRST Unordered List - TOC is $(ul:first)
+@D 2011-03-20 11:22:31 WORKS!   (JQuery Rules!)   TN, Javascript, Html, SpecialHeader: include FIRST Unordered List - TOC is $(ul:first)
+@D 2011-03-20 10:32:37 TN, Javascript, Html: [BUTTONS] for: contents, tags, backlinks, day/night
+@D 2011-03-20 00:03:47 Wiki/Blog: customized header information : CSS and Javascript ../TN: [[SpecialHeader]]; ../Html: [page.theme](file:///Users/stu/Desktop/Dropbox/Documents/TrunkNotes/Html/page.theme) ../Blog: [page.theme](file:///Users/stu/Desktop/Dropbox/Documents/TrunkNotes/Blog/page.theme)
+@D 2011-03-19 22:56:06 DID NOT WORK: include INLINE<<[[SyntaxHighlighter_shThemeDefaultCss]], [[SyntaxHighlighter_shCoreCss]]
+@D 2011-03-19 22:43:49 DID NOT WORK: enclosure / include file, with END-PRE] ... [START-PRE tags, : [[Snippet_javascript]]
+@D 2011-03-19 23:02:07 using Snippet_csscombined instead of Snippet_cssincl
+</pre>
+
+
+
+
+<!-- STYLESHEET -->
+
+
+<p>{{stylesheet Snippet_csscombined}}</p>
+
+<!-- LOCAL SyntaxHighlighter -->
+
+
+<!-- <link href="styles/shCore.css" rel="stylesheet" type="text/css" /> <link href="styles/shThemeDefault.css" rel="stylesheet" type="text/css" /> <script type="text/javascript" src="scripts/shCore.js"></script> -->
+
+
+
+
+<!-- DROPBOX hosted SyntaxHighlighter -->
+
+
+<!-- <link href="http://dl.dropbox.com/u/1603420/SyntaxHighlighter/styles/shCore.css" rel="stylesheet" type="text/css" /> <link href="http://dl.dropbox.com/u/1603420/SyntaxHighlighter/styles/shThemeDefault.css" rel="stylesheet" type="text/css" /> <script type="text/javascript" src="http://dl.dropbox.com/u/1603420/SyntaxHighlighter/scripts/shCore.js"></script> -->
+
+
+
+
+<!-- ALEXGORBATCHEV hosted SyntaxHighlighter -->
+
+
+<!-- <link href="http://alexgorbatchev.com/pub/sh/current/styles/shCore.css" rel="stylesheet" type="text/css" /> <link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css" rel="stylesheet" type="text/css" /> <script type="text/javascript" src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js"></script> -->
+
+
+
+
+<!-- SHOW/HIDE JAVASCRIPT -->
+
+
+<script language="javascript"> 
+    function showhide(in_classname) {
+        var x = document.getElementsByTagName('div');
+        for (i=0; i<x.length; i++) {
+            if ( x[i].className == in_classname ) {
+                if (x[i].style.display == 'block') {
+                    state = 'none';
+                } else {
+                    state = 'block';
+                }
+                x[i].style.display = state;
+            }
+        }
+    }
+</script>
+
+
+<p></p>
+
+<!-- DAYTIME/NIGHTTIME JAVASCRIPT -->
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        // Display day mode between 7am and 8pm
+        var currentTime = new Date().getHours();
+        if (7 <= currentTime && currentTime < 19) {
+            $(".todoaction,.ideaaction,.bugaction,.doneaction,body,h1,h2,h3,h4,h5,h6,a,a.missing-wiki-link,th,blockquote,code").addClass("day");
+        } else {
+            $(".todoaction,.ideaaction,.bugaction,.doneaction,body,h1,h2,h3,h4,h5,h6,a,a.missing-wiki-link,th,blockquote,code").addClass("night");
+        }
+        
+        $("button#daynight").click(function(){
+            $(".todoaction,.ideaaction,.bugaction,.doneaction,body,h1,h2,h3,h4,h5,h6,a,a.missing-wiki-link,th,blockquote,code").toggleClass("day");
+            $(".todoaction,.ideaaction,.bugaction .doneaction,body,h1,h2,h3,h4,h5,h6,a,a.missing-wiki-link,th,blockquote,code").toggleClass("night");
+        });
+        
+        $("button#hdrcontents").click(function(){
+            $("div.hdrcontents").toggle();
+            /* ALSO: include FIRST Unordered List */
+            $("ul:first").toggle();
+        });
+        
+        $("button#hdrtags").click(function(){
+            $("div.hdrtags").toggle();
+        });
+        
+        $("button#hdrbacklinks").click(function(){
+            $("div.hdrbacklinks").toggle();
+        });
+    
+    });
+</script>
+
+
+<p><button id="hdrcontents">Contents</button><button id="hdrtags">Tags</button><button id="hdrbacklinks">Backlinks</button><button id="daynight">Day/Night</button> <span class="tiny"> By: [<a href="file:///Users/stu/Desktop/Dropbox/Documents/TrunkNotes/Html/SpecialHeader.html">SpecialHeader</a>] [<a href="file:///Users/stu/Desktop/Dropbox/Documents/TrunkNotes/Html/Snippet_csscombined.html">Snippet_csscombined</a>] [<a href="file:///Users/stu/Desktop/Dropbox/Documents/TrunkNotes/Html/Snippet_cssincl.html">Snippet_cssincl</a>] [<a href="file:///Users/stu/Desktop/Dropbox/Documents/TrunkNotes/Html/Snippet_javascript.html">Snippet_javascript</a>] </span></p>
+
+<!-- BUTTONS [[Snippet_cssincl]] [[Snippet_cssday]] [[Snippet_cssnight]] [[Snippet_csscombined]] $(( [[Snippet_javascript]] )) -->
+
+
+<div class="hdrcontents"><a name="Contents"></a>
+<h1>Contents</h1></div>
+
+<p>{{toc}}</p>
+
+<!--
+<h1>Contents</h1>
+<h2>Tags</h2>
+<h2>Backlinks</h2>
+{{toc}}
+-->
+
+
+<!--
+>%hdrcontents%
+>{{toc}}
+-->
+
+
+<div class="hdrtags"><a name="Tags"></a>
+<h2>Tags</h2>
+
+<p>{{tags}}</p></div>
+
+<div class="hdrbacklinks"><a name="Backlinks"></a>
+<h2>Backlinks</h2>
+
+<p>{{backlinks}}</p></div>
+
+
+</body>
+</html>
+
+
