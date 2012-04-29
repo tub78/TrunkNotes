@@ -1,9 +1,9 @@
 Title: Special:Header
-Timestamp: 2011-10-07 23:49:33 +0000
+Timestamp: 2012-04-29 15:26:55 +0000
 Created: 2011-04-18 16:56:29 +0000
 Last Accessed: 2011-10-07 23:47:14 +0000
 Times Accessed: 40
-Tags: Javascript, TrunkNotes, Css
+Tags: TrunkNotes, Javascript, Css
 Metadata: 
 
 <!-- not required by TN
@@ -29,7 +29,7 @@ Metadata:
 <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->
 
 <!-- GITHUB hosted JQUERY.COOKIE.JS -->
-<!-- <script type="text/javascript" src="https://raw.github.com/carhartl/jquery-cookie/master/jquery.cookie.js"></script> -->
+<script type="text/javascript" src="https://raw.github.com/carhartl/jquery-cookie/master/jquery.cookie.js"></script>
 
 
 <!-- DAYTIME/NIGHTTIME JAVASCRIPT -->
@@ -95,31 +95,32 @@ Metadata:
 BUTTONS [[Snippet_cssincl]] [[Snippet_cssday]] [[Snippet_cssnight]] [[Snippet_csscombined]] [Blogger style-combined.css]
 -->
 <div class="inline">
-<button id="daynight">Day/Night</button>
-<button id="hdrcontents">Contents</button>
-<button id="hdrtags">Tags</button>
-<button id="hdrbacklinks">Backlinks</button>
-<button id="hdrrelated">Related</button>
-<button id="hdrhistory">History</button>
+<span class="title"> <a href="http://stuartjandrews.com">stuartjandrews.com</a> </span>
 <span class="tiny">[[About-This-Blog|About]]</span>
+<button id="daynight">Day/Night</button>
+<!-- <button id="hdrcontents">Contents</button> -->
+<button id="hdrtags">Tags</button>
+<!-- <button id="hdrbacklinks">Backlinks</button> -->
+<button id="hdrrelated">Related</button>
+<!-- <button id="hdrhistory">History</button> -->
 </div>
 
 
 
-<!-- CONTENTS -->
+<!-- CONTENTS
 >%hdrcontents%
 ># Contents #
-{{toc}}
+{{toc}} -->
 
 <!-- TAGS -->
 >%hdrtags%
 >## Tags ##
 >{{tags}}
 
-<!-- BACKLINKS -->
+<!-- BACKLINKS
 >%hdrbacklinks%
 >## Backlinks ##
->{{backlinks}}
+>{{backlinks}} -->
 
 <!-- HISTORY
 >%hdrhistory%

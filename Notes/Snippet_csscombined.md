@@ -1,9 +1,9 @@
 Title: Snippet_csscombined
-Timestamp: 2011-07-17 02:26:35 +0000
+Timestamp: 2012-04-21 20:56:16 +0000
 Created: 2011-03-27 03:31:28 +0000
 Last Accessed: 2011-07-17 02:26:39 +0000
 Times Accessed: 7
-Tags: Html, TrunkNotes
+Tags: TrunkNotes, Html
 Metadata: 
 
 /* was TN:Stylesheet:Day */
@@ -108,6 +108,7 @@ Classes
 }
 .tiny {
     font-size: 0.5em;
+    /* font-size: 10px; */
 }
 
 /* divflash style */
@@ -149,14 +150,6 @@ Classes
     list-style-type: none;
     padding-right: 20px;
 }
-.hdrhistory {
-    display: none;
-}
-.hdrhistory li {
-    display: inline;
-    list-style-type: none;
-    padding-right: 20px;
-}
 .hdrrelated {
     display: none;
 }
@@ -172,27 +165,44 @@ Classes
  * margin: top right btm left
  * margin: 0em;
  * margin: 1em 2em 1em 2em;
+
+ * font-family: 'Trebuchet MS',Trebuchet,Verdana,sans-serif;
+ * font-size: 100%;
+ * line-height: 150%;
+
+ * font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier;
+ * font-size: 100%;
+ * line-height: 125%;
+
+ * font: medium Arial;
  */
 body {
     margin: 0em;
-    font: medium Arial;
+    font-family: helvetica,arial,freesans,clean,sans-serif;
     font-size: 16px;
-    /* line-height: 130%; */
+    /* line-height: 1.5em; */
     background-repeat: repeat-x;
     background-attachment: fixed;
 }
 body.day {
-    color: #000000;
-    background-color: #FFFFFF;
+    color: #657B83;
+    background-color: #FDF6E3;
 }
 body.night {
-    color: #AAAAAA;
-    background-color: #191919;
+    color: #839496;
+    background-color: #002B36;
 }
 
-/* font-family: Tahoma, sans-serif; */
+
+/*
+ * font-family: Tahoma, sans-serif;
+ * font: Arial;
+
+ * font-family: 'Trebuchet MS',Trebuchet,Verdana,sans-serif;
+ * font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier;
+ */
 h1, h2, h3, h4, h5, h6 {
-    font: Arial;
+    font-family: helvetica,arial,freesans,clean,sans-serif;
     margin-top: 1.5em;
     margin-bottom: 0.5em;
 }
@@ -202,65 +212,69 @@ h1 {
     font-size: 1.8em;
 }
 h1.day {
-    color: #AA5873;
+    color: #DC322F;
 }
 h1.night {
-    color: #E08089;
+    color: #D33682;
 }
 h2 {
     font-size: 1.5em;
 }
 h2.day {
-    color: #50705C;
+    color: #268BD2;
 }
 h2.night {
-    color: #80E089;
+    color: #B58900;
 }
 h3 {
     font-size: 1.3em;
 }
 h3.day {
-    color: #1030A0;
+    color: #2AA198;
 }
 h3.night {
-    color: #4D89E0;
+    color: #859900;
 }
 h4 {
     font-size: 1.2em;
 }
 h4.day {
-    color: #103064;
+    color: #859900;
 }
 h4.night {
-    color: #C0C0F0;
+    color: #2AA198;
 }
 h5 {
     font-size: 1.1em;
 }
 h5.day {
-    color: #50506E;
+    color: #B58900;
 }
 h5.night {
-    color: #E0E0E4;
+    color: #268BD2;
 }
 h6 {
     font-size: 1.0em;
 }
 h6.day {
-    color: #636363;
+    color: #D33682;
 }
 h6.night {
-    color: #F0F0EC;
+    color: #DC322F;
 }
 a {
     text-decoration: none;
     border-bottom: 1px dotted;
+    color: #6C71C4;
 }
 a.day {
-    color: #0000FF;
+    /* color: #0000FF; */
+    /* color: #CB4B16 */
+    /* color: #6C71C4; */
 }
 a.night {
-    color: #63B8FF;
+    /* color: #63B8FF; */
+    /* color: #6C71C4; */
 }
 a.wiki-link {
     text-decoration: underline;
@@ -324,8 +338,8 @@ img {
     border: none;
 }
 pre {
-    border-left: 1px solid #CCCCCC;
-    margin-left: 2em;
+    /* border-left: 1px solid #CCCCCC; */
+    /* margin-left: 2em; */
     padding-left: 0.5em;
     padding-right: 0.5em;
     /* background: */
@@ -337,7 +351,7 @@ blockquote.day {
     background-color: #F6F5EB;
 }
 blockquote.night {
-    background-color: #302E2E;
+    background-color: #30302E;
 }
 hr {
     border: none;
@@ -349,9 +363,8 @@ del {
     color: #777777;
 }
 code {
+    padding: 0px 3px 0px;
     display: inline-block;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
 }
 code.day {
     color: #0000FF;
@@ -361,5 +374,39 @@ code.night {
     color: #FFFFFF;
     background-color: #555555;
 }
+
+/* daynight button ================================================ */
+
+button#daynight, button#hdrcontents, button#hdrtags, button#hdrbacklinks, button#hdrrelated {
+	  float:right;
+    vertical-align:bottom;
+  	padding: 3px 6px;
+  	margin: 2px;
+  	background: #eee;
+  	color:#005F6B;
+  	border-radius: 3px;
+    border: 0px;
+    border-bottom: 1px dotted;
+  	text-decoration:none;
+}
+
+.header {
+    margin: 1em 0em 1em 0em;
+}
+.title {
+    font-family: helvetica,arial,freesans,clean,sans-serif;
+    /* font-size: 2.4em; */
+    font-size: 1.2em;
+    /* line-height: 1.5em; */
+}
+.title.day {
+    color: #657B83;
+    background-color: #FDF6E3;
+}
+.title.night {
+    color: #839496;
+    background-color: #002B36;
+}
+
 
 
