@@ -29,63 +29,13 @@ Metadata:
 <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->
 
 <!-- GITHUB hosted JQUERY.COOKIE.JS -->
-<script type="text/javascript" src="https://raw.github.com/carhartl/jquery-cookie/master/jquery.cookie.js"></script>
-
+<!-- <script type="text/javascript" src="https://raw.github.com/carhartl/jquery-cookie/master/jquery.cookie.js"></script> -->
+{{include TN_JQueryCookie}}
 
 <!-- DAYTIME/NIGHTTIME JAVASCRIPT -->
-<script language="javascript">//<![CDATA[ 
-  $(document).ready(function(){
-    // Display day mode between 7am and 8pm
-    var currentTime = new Date().getHours();
-    var daytime_selected = (7 <= currentTime && currentTime < 19) ? 'yes' : 'no';
-    daytime_selected = $.cookie('tub78_daytime_selected') || daytime_selected;
-    if (daytime_selected == 'yes') {
-      $(".title,.todoaction,.ideaaction,.bugaction,.doneaction,body,h1,h2,h3,h4,h5,h6,a,a.missing-wiki-link,th,blockquote,code").addClass("day");
-    } else {
-      $(".title,.todoaction,.ideaaction,.bugaction,.doneaction,body,h1,h2,h3,h4,h5,h6,a,a.missing-wiki-link,th,blockquote,code").addClass("night");
-    }
-    $.cookie('tub78_daytime_selected', daytime_selected, { expires: 1, path: '/' });
-    $("button#daynight").click(function(){
-      $(".title,.todoaction,.ideaaction,.bugaction,.doneaction,body,h1,h2,h3,h4,h5,h6,a,a.missing-wiki-link,th,blockquote,code").toggleClass("day");
-      $(".title,.todoaction,.ideaaction,.bugaction .doneaction,body,h1,h2,h3,h4,h5,h6,a,a.missing-wiki-link,th,blockquote,code").toggleClass("night");
-      var daytime_selected = $.cookie('tub78_daytime_selected') || 'yes';
-      $.cookie('tub78_daytime_selected', (daytime_selected == 'yes') ? 'no' : 'yes', { expires: 1, path: '/' });
-    });
+<!-- <script type="text/javascript" src="https://raw.github.com/tub78/TrunkNotes/master/daynight.js"></script> -->
+{{include TN_DayNight}}
 
-    /* Hide first unordered list (toc) if hdrcontents is hidden */
-    /* .. does not work b/c toc is not instantiated yet */
-    /*
-    if ($("div.hdrcontents:visible").size() == 0) {
-        $("div.hdrcontents").before($("ul:first").text());
-        $("div.hdrcontents").after($("div.hdrcontents:visible").size() + " " + $("div.hdrcontents:hidden").size());
-        $("ul:first").hide();
-    }
-    */
-
-    $("button#hdrcontents").click(function(){
-        $("div.hdrcontents").toggle();
-        /* ALSO: toggle first unordered list */
-        $("ul:first").toggle();
-    });
-
-    $("button#hdrtags").click(function(){
-        $("div.hdrtags").toggle();
-    });
-
-    $("button#hdrbacklinks").click(function(){
-        $("div.hdrbacklinks").toggle();
-    });
-
-    $("button#hdrrelated").click(function(){
-        $("div.hdrrelated").toggle();
-    });
-
-    $("button#hdrhistory").click(function(){
-        $("div.hdrhistory").toggle();
-    });
-
-  });
-  //]]></script>
 <!-- END HEADER / START BODY -->
 <!-- not required by TN
 </head>
